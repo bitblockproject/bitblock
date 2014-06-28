@@ -1,7 +1,7 @@
 BitBlock integration/staging tree
 ================================
 
-http://www.bitblock.io
+http://www.bitblock.ml
 
 Copyright (c) 2009-2013 Bitcoin Developers
 Copyright (c) 2013-2014 BitBlock Developers
@@ -9,8 +9,8 @@ Copyright (c) 2013-2014 BitBlock Developers
 What is BitBlock?
 ----------------
 
-BitBlock is a lite version of Bitcoin using X11 as a proof-of-work algorithm.
- - Super secure hashing algorithm: 11 rounds of scientific hashing functions (blake, bmw, groestl, jh, keccak, skein, luffa, cubehash, shavite, simd, echo)
+BitBlock is a lite version of Bitcoin using X15 as a proof-of-work algorithm.
+ - Super secure hashing algorithm: 15 rounds of scientific hashing functions (blake, bmw, groestl, jh, keccak, skein, luffa, cubehash, shavite, simd, echo, hamsi, fugue, shabal, whirlpool)
  - Block reward is controlled by moore's law: 2222222/(((Difficulty+2600)/9)^2)
  - GPU/CPU only mining
  - Block generation: 2.5 minutes
@@ -19,7 +19,7 @@ BitBlock is a lite version of Bitcoin using X11 as a proof-of-work algorithm.
  - Anonymous blockchain using DarkSend technology (Based on CoinJoin): Beta Testing
 
 For more information, as well as an immediately useable, binary version of
-the BitBlock client sofware, see http://www.bitblock.io.
+the BitBlock client sofware, see http://www.bitblock.ml.
 
 License
 -------
