@@ -1330,19 +1330,19 @@ int64 static GetBlockValue(int nBits, int nHeight, int64 nFees)
     if(nHeight > 4500 || fTestNet) dDiff = ConvertBitsToDouble(nBits);
 
     int64 nSubsidy = 0; 
-    if(nHeight >= 5465) {
+    if(nHeight >= 9876) {
         if((nHeight >= 17000 && dDiff > 75) || nHeight >= 24000) { // GPU/ASIC difficulty calc
             // 2222222/(((x+2600)/9)^2)
-            nSubsidy = (2222222.0 / (pow((dDiff+2600.0)/9.0,2.0)));
-            if (nSubsidy > 25) nSubsidy = 25;
-            if (nSubsidy < 5) nSubsidy = 5;
+            nSubsidy = (5555555.0 / (pow((dDiff+2600.0)/9.0,2.0)));
+            if (nSubsidy > 25) nSubsidy = 69;
+            if (nSubsidy < 5) nSubsidy = 20;
         } else { // CPU mining calc
             nSubsidy = (11111.0 / (pow((dDiff+51.0)/6.0,2.0)));
             if (nSubsidy > 500) nSubsidy = 500;
             if (nSubsidy < 25) nSubsidy = 25;
         }
     } else {
-        nSubsidy = (1111.0 / (pow((dDiff+1.0),2.0)));
+        nSubsidy = (3333.0 / (pow((dDiff+1.0),2.0)));
         if (nSubsidy > 500) nSubsidy = 500;
         if (nSubsidy < 1) nSubsidy = 1;
     }
@@ -1357,7 +1357,7 @@ int64 static GetBlockValue(int nBits, int nHeight, int64 nFees)
 }
 
 static const int64 nTargetTimespan = 24 * 60 * 60; // BitBlock: 1 day
-static const int64 nTargetSpacing = 2.5 * 60; // BitBlock: 2.5 minutes
+static const int64 nTargetSpacing = 1.9 * 60; // BitBlock: 2.5 minutes
 static const int64 nInterval = nTargetTimespan / nTargetSpacing; // 576
 
 //
